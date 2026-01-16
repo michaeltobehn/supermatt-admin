@@ -1,16 +1,18 @@
-# SUPERMATT Auth Portal
+# SUPERMATT Admin
 
-Minimal Auth Portal for SUPERMATT Apps - handles authentication only.
+Admin Dashboard for SUPERMATT App Suite.
 
 ## Features
 
-- Login mit Email/Password
-- Login mit Google, GitHub, Apple (OAuth)
-- Registrierung mit Email-Bestaetigung
-- Passwort vergessen / zuruecksetzen
-- Apps Dashboard (SSO Launcher)
-- Profil-Einstellungen
-- SSO Integration Docs
+- User Management (CRUD, roles, permissions)
+- App Management (register apps, configure SSO)
+- Access Control (grant/revoke app access)
+- Analytics & Stats
+
+## Auth
+
+Uses Supabase Auth via supermatt-auth portal.
+Only users with role="admin" can access.
 
 ## Tech Stack
 
@@ -18,7 +20,6 @@ Minimal Auth Portal for SUPERMATT Apps - handles authentication only.
 - Vite
 - Tailwind CSS v4
 - Supabase (Auth + Database)
-- Zustand (State Management)
 - React Router v7
 
 ## Setup
@@ -39,10 +40,10 @@ VITE_SUPABASE_ANON_KEY=xxx
 
 Das Projekt ist fuer Vercel optimiert. Push zu `main` triggert Auto-Deploy.
 
-URL: https://auth.supermatt.agency
+URL: https://admin.supermatt.agency
 
 ## Related Projects
 
-- [supermatt-admin](https://github.com/michaeltobehn/supermatt-admin) - Admin Portal (User/App Verwaltung)
+- [supermatt-auth](https://github.com/michaeltobehn/supermatt-auth) - Auth Portal (SSO)
 - [SM-TRAX](https://github.com/michaeltobehn/sm-trax) - Zeiterfassung
 - [SM-Surveys](https://github.com/michaeltobehn/sm-surveys) - Umfragen
